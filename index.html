@@ -70,6 +70,57 @@
 
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+          <!-- Form -->
+
+          <form class="main-form">
+            <div class="titel-box">
+              <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="username">Имя </label>
+              <input class="form-input" type="text" name="name" id="username" />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/decoration/icons/symbol-defs.svg#icon-f-user"></use>
+              </svg>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="phone">Телефон </label>
+              <input class="form-input" type="tel" name="Телефон" id="phone" />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/decoration/icons/symbol-defs.svg#icon-f-phone"></use>
+              </svg>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="mail">Почта </label>
+              <input class="form-input" type="email" name="name" id="mail" />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/decoration/icons/symbol-defs.svg#icon-f-email"></use>
+              </svg>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="comment">Комментарий</label>
+              <textarea
+                class="text-area"
+                name="comment"
+                id="comment"
+                rows="10"
+                placeholder="Введите текст"
+              ></textarea>
+            </div>
+            <!-- CHECK BOX -->
+            <label class="checkbox-label">
+              <input class="input-checkbox" type="checkbox" name="checkbox" value="agreement"/>
+              <span class="check-icon"></span>
+              Соглашаюсь с рассылкой и принимаю
+              <span>
+                <a class="agreement-link" href="#">Условия договора</a>
+              </span>
+            </label>
+
+            <button class="form-btn" type="submit">Отправить</button>
+          </form>
           <button class="btn-modal" data-modal-close>
             <svg class="close" width="11px" height="11px">
               <use href="./images/decoration/icons/symbol-defs.svg#icon-close"></use>
@@ -309,6 +360,7 @@
         </div>
       </section>
     </main>
+
     <!-- Comapnies -->
     <section class="companies">
       <div class="container">
@@ -354,6 +406,7 @@
       </div>
     </section>
     <!--footer -->
+
     <footer class="footer">
       <div class="container">
         <div class="footer-flex">
@@ -408,6 +461,24 @@
                 </a>
               </li>
             </ul>
+          </div>
+          <div class="submit">
+            <b class="submit-title">Подпишитесь на рассылку</b>
+            <label for="submit-mail">
+              <input
+                class="mail-input"
+                type="email"
+                name="email"
+                id="submit-mail"
+                placeholder="E-mail"
+              />
+              <button class="submit-btn" type="submit">
+                Подписаться
+                <svg class="icon-submit" width="24" height="24">
+                  <use href="./images/decoration/icons/symbol-defs.svg#icon-submit"></use>
+                </svg>
+              </button>
+            </label>
           </div>
         </div>
       </div>
